@@ -8,7 +8,9 @@ import CreateExercise from "./components/create-exercise.component";
 import CreateUser from "./components/create-user.component"
 function App() {
   return (
+    
   <Router>
+    
     <Navbar/>
     <Route path ="/" exact component = {ExercisesList} />
     <Route path ="/edit/:id" component = {EditExercise} />
