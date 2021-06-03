@@ -8,8 +8,14 @@ export default class Navbar extends Component {
         return(
 
             <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+              <div class="container-fluid">
+              
                 <Link to="/" className="navbar-brand">Exercise Tracker</Link>
-                <div className = "collapse navbar-collapse">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+               
+                <div className = "collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav mr-auto">
                     <li className = "navbar-item">
                     <Link to="/" className="nav-link">Exercises</Link>
@@ -23,7 +29,7 @@ export default class Navbar extends Component {
 
                 </ul>
                 </div>
-
+                </div>
         </nav>
         );
 

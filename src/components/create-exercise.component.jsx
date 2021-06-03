@@ -1,5 +1,4 @@
 import React, {Component } from 'react';
-import { Link } from 'react-router-dom';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css"
 
@@ -27,7 +26,7 @@ export default class CreateExercise extends Component {
     componentDidMount(){
       this.setState({
         users : ['test user'],
-        username: 'test user',
+        username:'test user',
       })
     }
     
@@ -57,16 +56,17 @@ export default class CreateExercise extends Component {
       }
        
         onSubmit(e){
-            e.preventDefault();
+          
             const exercise = {
                 username: this.state.username,
                 description: this.state.description,
                 duration: this.state.duration,
                 date: this.state.date,
             }
+            console.log("Hi i am here")
             console.log(exercise);
             window.location = '/';
-    
+            e.preventDefault();
         }
     
     
