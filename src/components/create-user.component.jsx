@@ -40,7 +40,7 @@ onSubmit(e){
   });
 
   this.setState({
-    username:'',
+    username:''
   })
  
 }
